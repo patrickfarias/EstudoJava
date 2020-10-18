@@ -2,6 +2,7 @@ package farias.eugene.patrick.estudojava.java.basico.util.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class exemploList {
@@ -67,7 +68,6 @@ public class exemploList {
         System.out.println("Existe alguem de nome Renata nessa lista?: " + nomes.contains("Renata"));
         System.out.println("Existe alguem de nome Helena nessa lista?: " + nomes.contains("Helena"));
 
-
         // quero saber se existe determinado nome e qual o posicao dele na lista.
         // se retornar -1
         // siginifica que o elemento nao existe
@@ -82,14 +82,69 @@ public class exemploList {
         nomes.clear(); // limpa a lista
         System.out.println("e agora?: " + nomes.isEmpty());
 
-
         // quero saber se existe determinado nome e qual o posicao dele na lista.
         // se retornar -1
         // siginifica que o elemento nao existe
+        // Se estiver retorna o indice.
         posicao = nomes.indexOf("Helena");
         System.out.println("Helena esta na posicao: " + posicao);
 
+        nomes.add("Patrick");
+        nomes.add("Priscila");
+        nomes.add("Altair");
+
+        // FAZER A NAVEGACAO
+        System.out.println("Navegacao pelo FOR");
+
+        for (String listaItens: nomes
+             ) {
+            System.out.println("-->: " + listaItens);
+        }
+
+        System.out.println("Utiliando o ITERATOR");
+
+        Iterator<String>  iterator = nomes.iterator();
+
+        // para acessar podemos utilizar o while.
+        // o while possui alguns metodos bem interresantes
+        // Vamos usar HasNext = Devolve um boolean para cada intem, true se contiver mais itens
+
+        while (iterator.hasNext()){
+
+            System.out.println("==>: " + iterator.next());
+
+        }
+
+
+        // INSERIR UMA LISTA EM OUTRA LISTA.
+
+        System.out.println("Inserindo uma lista em outra lista");
+
+        System.out.println("Lista 1:");
+        List<String> alunos = new ArrayList();
+
+        alunos.add("Jose");
+        alunos.add("Pedro");
+
+        System.out.println(alunos);
+
+        System.out.println("Lista 2:");
+
+        List<String> novosAlunos = new ArrayList();
+
+        novosAlunos.add("Renata");
+        novosAlunos.add("Paula");
+
+        System.out.println(novosAlunos);
+
+        alunos.addAll(novosAlunos);
+        System.out.println("Nova Lista de alunos");
+
+        System.out.println(alunos);
 
     }
+
+
+
 
 }
