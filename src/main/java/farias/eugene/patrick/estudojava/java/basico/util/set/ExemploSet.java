@@ -8,7 +8,6 @@ public class ExemploSet {
 
     public static void main(String[] args) {
 
-
        // java util set
 
         // Nao garante a ordem de insercao
@@ -28,7 +27,7 @@ public class ExemploSet {
         // EXISTEM TRES IMPLEMENTACOES DE SET
 
 
-        // HASSET
+        // HASHSET
 
         // Quando utilizar:
         // Quando nao e necessario manter ordenacao
@@ -53,11 +52,7 @@ public class ExemploSet {
         // performance
         // E a mais lenta por permitir ordenacao
 
-
-
-
-
-        //TreeSet
+        //TREESET
         // implementacao de arvore binaria
 
         // Quando utilizar:
@@ -68,18 +63,6 @@ public class ExemploSet {
 
         // performance
         // E performatico para leitura. Para modificacao em a necessidade de reordenar, sendo mais lento que LinkedSet.
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
