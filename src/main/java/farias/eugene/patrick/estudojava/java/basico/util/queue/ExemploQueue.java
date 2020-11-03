@@ -6,8 +6,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import java.util.Deque;
-
 public class ExemploQueue {
 
     public static void main(String[] args) {

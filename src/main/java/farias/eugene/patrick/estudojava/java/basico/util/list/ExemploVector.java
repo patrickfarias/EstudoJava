@@ -1,9 +1,9 @@
 package farias.eugene.patrick.estudojava.java.basico.util.list;
 
-import java.util.*;
+import java.util.List;
+import java.util.Vector;
 
 public class ExemploVector {
-
 
     public static void main(String[] args) {
 
